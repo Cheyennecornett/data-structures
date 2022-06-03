@@ -6,12 +6,12 @@ var Stack = function() {
   // but try not not reference your old code in writing the new style.
 };
 
-Queue.prototype.push = function (value) {
+Stack.prototype.push = function (value) {
   this.storage[this.spot] = value;
   this.spot++;
 };
 
-Queue.prototype.pop = function () {
+Stack.prototype.pop = function () {
   if (this.spot > 0) {
     this.spot--;
     var result = this.storage[this.spot];
@@ -21,6 +21,6 @@ Queue.prototype.pop = function () {
   }
 };
 
-Queue.prototype.size = function () {
+Stack.prototype.size = function () {
   return this.spot;
-}
+};
